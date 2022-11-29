@@ -125,8 +125,13 @@ form textarea {
     border: 1px red solid;
 }
 
+
 .tags a:hover {
     background-color: white;
+    color: red;
+}
+
+.color-fill {
     color: red;
 }
 .appointment a i{
@@ -182,3 +187,4 @@ form textarea {
 .open p {
     font-family: 'Noto Sans', sans-serif;
 }
+
