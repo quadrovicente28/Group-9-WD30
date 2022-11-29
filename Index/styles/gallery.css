@@ -6,13 +6,14 @@
     display: flex;
 }
 .gallery {
-    background-image: url(./images/oldbarbershop.JPG);
+    background-image: url(..//images/oldbarbershop.JPG);
     height: 400px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-end;
+    max-height: 60vh;
 }
 .gallery h1 {
 text-align:start;
@@ -23,6 +24,7 @@ margin-bottom: -30px;
 font-size: 100px;
 font-weight: 500px;
 font-family: Alfa Slab One;
+text-transform: uppercase;
 }
 .container
 {

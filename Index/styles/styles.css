@@ -101,16 +101,34 @@ nav.navbar ul.navbar-nav li.nav-item {
 
 .page-cover {
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-height: 60vh;
+  max-height: 50vh;
   margin-top: 100px;
-}
-.page-cover img {
+  background-image: url(../images/home.jpg);
+  background-position: center;
   width: 100%;
-  height: auto;
+  height: 350px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
+.page-cover h1 {
+  color: white;
+  opacity: 9;
+  margin-bottom: -30px;
+  font-size: 100px;
+  font-weight: 400px;
+  font-family: Alfa Slab One;
+  text-transform: uppercase;
+  margin-left: 242px;
+  }
+.w3-animate-left{position:relative;
+  animation:animateleft 0.7s}
+
+  @keyframes animateleft{from{left: -240px;
+    opacity:0} to{left:0;opacity:1}}
+ .margin{
+  margin: 0px 240px;
+ }
 
 footer {
   background-size: contain;
@@ -124,7 +142,7 @@ footer .container {
   align-items: center;
   flex-wrap: wrap;
 }
-footer .container > div {
+footer .container div {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -145,17 +163,5 @@ footer ul {
   list-style: none;
   padding: 10px;
 }
-.heading{
-  display: relative;
-  -webkit-text-size-adjust: 100%;
-  
 
-}
-.heading h1{
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 71px;
-  color: #FFFFFF!important;
-}
 /*# sourceMappingURL=styles.css.map */
