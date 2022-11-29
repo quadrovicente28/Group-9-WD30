@@ -3,26 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 
-* {
-    box-sizing: border-box;
-}
-body {
-    margin: 0;
-}
 header {
-    background-image: url(conheader.png);
-    height: 450px;
+    background-image: url(../images/conheader.png);
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     display: flex;
     align-items: flex-end;
-    font-family: 'Candal', sans-serif;
-    font-size: 38px;
+
 }
 header h1 {
     padding-left: 18%;
-    margin-bottom: -20px;
+    margin-bottom: -18px;
+    font-family: 'Candal', sans-serif;
+    font-size: 92px;
 }
 
 main {
@@ -31,12 +26,12 @@ main {
     flex-wrap: wrap;
     gap: 40px;
 }
-.placeholder{
-    width: 15%;
+.placeholdermagic{
+    width: 12%;
 }
 
 .left-side {
-    width: 45%;
+    width: 48%;
 
 }
 
@@ -108,7 +103,7 @@ form textarea {
 }
 
 .right-side {
-    width: 25%;
+    width: 28%;
 }
 
 .tags {
@@ -189,11 +184,13 @@ form textarea {
 }
 
 @media screen and (max-width: 999px) {
-
+    header {
+        height: 400px;
+    }
     header h1 {
         margin-bottom: 0px;
         margin-left: -50px;
-        font-size: 35px;
+        font-size: 50px;
     }
     main {
         flex-direction: column;
@@ -207,7 +204,14 @@ form textarea {
     .right-side {
         width: 100%;
     }
+}
 
-    
+@media screen and (max-width: 374px) {
+    form input {
+        font-size: 12px;
+    }
+    .tags a {
+        font-size: 12px;
+    }
 }
 
