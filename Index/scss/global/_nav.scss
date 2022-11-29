@@ -7,6 +7,9 @@ nav {
         display: flex;
         justify-content: space-between;
 
+        @media (max-width: 640px) {
+            justify-content:center;
+        }
         .topbar-left{
             display: flex;
             align-items: center;
@@ -14,9 +17,16 @@ nav {
             .topbar-item{
                 color: white;
                 padding: 0px 10px;
+                font-size: 14px;
 
                 a {
                     color: white;
+                }
+
+                &.socials{
+                    @media (max-width: 640px) {
+                        display: none;
+                    }
                 }
             }
         }
@@ -36,7 +46,7 @@ nav {
                     background-color: $primary-red-hover;
                 }
 
-                @media (max-width: 600px) {
+                @media (max-width: 640px) {
                     display: none;
                 }
             }
@@ -55,7 +65,7 @@ nav.navbar{
         padding: 0;
         img{
             height: 120px;
-            margin: 0px -70px;
+            margin: 0px -20px;
            }
         @media (min-width: 990px) {
             display: none;
@@ -73,7 +83,7 @@ nav.navbar{
         margin: 20px auto;
         li.nav-item-brand{
             height: 100px;
-            margin: -20px -70px;
+            margin: -20px -10px;
             padding: 0px;
            img{
             height: 120px;
@@ -110,13 +120,21 @@ nav.navbar{
 
 footer{
     background-size: contain;
-    background-image: url(/BOB/images/footer-bg.jpg);
+    background-image: url(../images/footer-bg.jpg);
     background-repeat: repeat-x;
     background-position: center top;
     .container{
         color: $light;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+
+        &>div{
+            display: flex;
+            justify-content: center;
+            // flex-basis: 300px;
+            flex-direction: column;
+        }
     }
     .bottom-bar{
         background-color: $dark;
@@ -129,5 +147,10 @@ footer{
         img {
             height: 120px;
         }
+    }
+
+    ul{
+        list-style: none;
+        padding: 10px;
     }
 }
