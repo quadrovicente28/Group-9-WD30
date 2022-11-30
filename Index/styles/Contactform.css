@@ -172,11 +172,11 @@ form textarea {
     border: 1px solid gray;
     border-width: 5px;
     border-radius: 5px;
-    padding-left: 15px;
     margin-bottom: 80px;
 } 
 .open h3 {
     font-family: 'Lato', sans-serif;
+    text-align: center;
 }
 
 .open p {
