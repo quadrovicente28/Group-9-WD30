@@ -365,6 +365,9 @@ form textarea {
 }
 
 @media screen and (max-width: 999px) {
+    main {
+        padding: 30px;
+    }
     header {
         height: 400px;
     }
@@ -388,8 +391,20 @@ form textarea {
 }
 
 @media screen and (max-width: 374px) {
+    main {
+        padding: 20px;
+    }
     form input {
+        font-size: 10px;
+    }
+    .contact h3,
+    .open h3 {
+        font-size: 18px;
+    }
+
+    .contact a {
         font-size: 12px;
+
     }
     .tags a {
         font-size: 12px;
