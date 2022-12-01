@@ -364,6 +364,12 @@ form textarea {
     font-family: 'Noto Sans', sans-serif;
 }
 
+@media screen and (max-width: 1220px) {
+  .open p {
+    font-size: 15px;
+}
+}
+
 @media screen and (max-width: 999px) {
     main {
         padding: 30px;
