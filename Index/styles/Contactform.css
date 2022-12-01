@@ -2,204 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
-nav .top {
-    background-color: #313131;
-  }
-  nav .topbar {
-    display: flex;
-    justify-content: space-between;
-  }
-  @media (max-width: 640px) {
-    nav .topbar {
-      justify-content: center;
-    }
-  }
-  nav .topbar .topbar-left {
-    display: flex;
-    align-items: center;
-  }
-  nav .topbar .topbar-left .topbar-item {
-    color: white;
-    padding: 0px 10px;
-    font-size: 14px;
-  }
-  nav .topbar .topbar-left .topbar-item a {
-    color: white;
-  }
-  @media (max-width: 640px) {
-    nav .topbar .topbar-left .topbar-item.socials {
-      display: none;
-    }
-  }
-  nav .topbar .topbar-right button {
-    padding: 0px 15px;
-    border-radius: 1px;
-    margin: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-    background-color: #971A1E;
-    border: none;
-  }
-  nav .topbar .topbar-right button:hover {
-    background-color: #5d0b0e;
-  }
-  @media (max-width: 640px) {
-    nav .topbar .topbar-right button {
-      display: none;
-    }
-  }
-  
-  nav.navbar {
-    background-image: url(https://tweedbarbers.com/wp-content/uploads/2018/07/nav-wood.png);
-    background-size: cover;
-    padding: 0px;
-  }
-  nav.navbar .navbar-brand {
-    height: 100px;
-    padding: 0;
-  }
-  nav.navbar .navbar-brand img {
-    height: 120px;
-    margin: 0px -20px;
-  }
-  @media (min-width: 990px) {
-    nav.navbar .navbar-brand {
-      display: none;
-    }
-  }
-  nav.navbar h1 {
-    color: white;
-  }
-  @media (min-width: 990px) {
-    nav.navbar h1 {
-      display: none;
-    }
-  }
-  nav.navbar ul.navbar-nav {
-    margin: 20px auto;
-  }
-  nav.navbar ul.navbar-nav li.nav-item-brand {
-    height: 100px;
-  
-    margin: -20px -10px;
-  
-  
-    padding: 0px;
-  }
-  nav.navbar ul.navbar-nav li.nav-item-brand img {
-    height: 120px;
-  }
-  @media (max-width: 990px) {
-    nav.navbar ul.navbar-nav li.nav-item-brand {
-      display: none;
-    }
-  }
-  nav.navbar ul.navbar-nav li.nav-item {
-    display: flex;
-    align-items: flex-end;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0px 10px;
-  }
-  
 
-  .w3-animate-left{position:relative;
-    animation:animateleft 1s}
-  
-    @keyframes animateleft{from{left: -240px;
-      opacity:0} to{left:0;opacity:1}}
-   .margin{
-    margin: 0px 240px;
-   }
-  
-  .cont {
-    display: flex;
-    margin: 30px 240px 0px 240px;
-  }
-  .app_row {
-  
-    height: 200px;
-    
-    position: relative;
-    
-  }
-  .app_row img {
-    padding-right: 40px;
-  }
-  .top-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: all 0.7s ease;
-  }
-  
-  .top-img:hover {
-    opacity: 1;
-  }
-  .app_row div {
-    width: 350px;
-  }
-  button {
-    border-width: 1px!important;
-  }
-  button:hover::after{
-    content: ' →';
-  }
-   
-  footer {
-    background-size: contain;
-    background-image: url(../images/footer-bg.jpg);
-    background-repeat: repeat-x;
-    background-position: center top;
-  }
-  footer .container {
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  footer .container div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  footer .bottom-bar {
-    background-color: #313131;
-  }
-  footer .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px;
-  }
-  footer .logo img {
-    height: 120px;
-  }
-  footer ul {
-    list-style: none;
-    padding: 10px;
-  }
-  
+
+.page-cover {
+  background-image: url(../images/home.jpg);
+}
   /*# sourceMappingURL=styles.css.map */
-  
-header {
-    background-image: url(../images/conheader.png);
-    height: 550px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    display: flex;
-    align-items: flex-end;
-
-}
-header h1 {
-    padding-left: 18%;
-    margin-bottom: -18px;
-    font-family: 'Candal', sans-serif;
-    font-size: 92px;
-}
 
 main {
     padding: 54px;
@@ -268,7 +76,7 @@ form textarea {
     font-size: 14px;
 }
 
-.contact-form div button {
+/* .contact-form div button {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     font-size: 15px;
     padding: 15px;
@@ -283,6 +91,8 @@ form textarea {
     color: white;
     background-color: #971A1E;
 }
+} */
+
 
 .right-side {
     width: 28%;
