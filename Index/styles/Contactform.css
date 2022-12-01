@@ -273,14 +273,15 @@ form textarea {
     font-size: 15px;
     padding: 15px;
     border-radius: 5px;
-    background-color: red;
+    background-color: #971A1E;
     color: white;
     margin-top: 20px;
+    border: 0;
 }
 
 .contact-form div button:hover {
-    background-color: white;
-    color: red;
+    color: white;
+    background-color: #971A1E;
 }
 
 .right-side {
@@ -293,18 +294,16 @@ form textarea {
 }
 .tags a {
     font-family: 'Candal', sans-serif;
-    color: white;
     font-size: 15px;
     text-decoration: none;
     padding: 10px;
-    background-color: red;
-    border: 1px red solid;
+    color: white;
+    background-color: #971A1E;
 }
 
 
 .tags a:hover {
-    background-color: white;
-    color: red;
+    background-color: #5d0b0e;
 }
 
 .color-fill {
