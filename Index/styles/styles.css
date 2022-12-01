@@ -37,9 +37,11 @@ nav .topbar .topbar-right button {
   background-color: #971A1E;
   border: none;
 }
-nav .topbar .topbar-right button:hover {
+
+nav .topbar .topbar-right button:hover{
   background-color: #5d0b0e;
 }
+
 @media (max-width: 640px) {
   nav .topbar .topbar-right button {
     display: none;
@@ -126,55 +128,7 @@ nav.navbar ul.navbar-nav li.nav-item {
 
   @keyframes animateleft{from{left: -240px;
     opacity:0} to{left:0;opacity:1}}
- .margin{
-  margin: 0px 240px;
- }
 
-.cont {
-  display: flex;
-  margin: 30px 240px 0px 240px;
-}
-.app_row {
-
-  height: 200px;
-  
-  position: relative;
-  
-}
-.app_row img {
-  padding-right: 40px;
-}
-.top-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: all 0.7s ease;
-}
-
-.top-img:hover {
-  opacity: 1;
-}
-.app_row div {
-  width: 350px;
-}
-button {
-  font-size: 14px;
-  background-color: #c93948;
-  border-width: 0px!important;
-  font-weight: bold;
-  font-style: normal;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
-  height: 40px;
-  border-radius: 5%;
-}
-button:hover::after{
-  padding-left: 10px;
-  content: '→';
-}
- 
 footer {
   background-size: contain;
   background-image: url(../images/footer-bg.jpg);
@@ -210,3 +164,59 @@ footer ul {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+/* button  */
+button {
+  padding: 0px 15px;
+  border-radius: 1px;
+  margin: 5px;
+  font-size: 14px;
+  background-color: #c93948;
+  border-width: 0px!important;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  height: 40px;
+  border-radius: 5%;
+}
+button:hover::after{
+  padding-left: 10px;
+  content: '→';
+}
+ 
+button:hover{
+  background-color: #5d0b0e;
+}
+
+/* page cover animations */
+.page-cover {
+  overflow: hidden;
+  max-height: 60vh;
+  margin-top: 100px;
+  background-image: url(../images/home.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  /* height: 350px; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.page-cover h1 {
+  color: white;
+  opacity: 9;
+  margin-bottom: -30px;
+  font-size: 100px;
+  font-weight: 400px;
+  font-family: Alfa Slab One;
+  text-transform: uppercase;
+  /* margin-left: 242px; */
+  }
+.w3-animate-left{position:relative;
+  animation:animateleft 1s}
+
+  @keyframes animateleft{from{left: -240px;
+    opacity:0} to{left:0;opacity:1}}
