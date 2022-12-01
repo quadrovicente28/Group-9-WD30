@@ -401,6 +401,9 @@ form textarea {
     .open h3 {
         font-size: 18px;
     }
+    .open p {
+        font-size: 12px;
+    }
 
     .contact a {
         font-size: 12px;
