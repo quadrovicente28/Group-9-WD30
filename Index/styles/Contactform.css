@@ -364,7 +364,16 @@ form textarea {
     font-family: 'Noto Sans', sans-serif;
 }
 
+@media screen and (max-width: 1220px) {
+  .open p {
+    font-size: 15px;
+}
+}
+
 @media screen and (max-width: 999px) {
+    main {
+        padding: 30px;
+    }
     header {
         height: 400px;
     }
@@ -388,8 +397,23 @@ form textarea {
 }
 
 @media screen and (max-width: 374px) {
+    main {
+        padding: 20px;
+    }
     form input {
+        font-size: 10px;
+    }
+    .contact h3,
+    .open h3 {
+        font-size: 18px;
+    }
+    .open p {
         font-size: 12px;
+    }
+
+    .contact a {
+        font-size: 12px;
+
     }
     .tags a {
         font-size: 12px;
