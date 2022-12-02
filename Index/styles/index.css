@@ -103,6 +103,18 @@
     grid-row: span 1;
   }
 
+  #reviewsCarousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/* modifying bootstrap carousel buttons */
+.carousel-control-next, .carousel-control-prev {
+  position: unset;
+  background: unset;
+  width: unset;
+  background-color: black !important;
+}
 @media (max-width: 1000px)  {
   .app_row {
     grid-column: span 3;
