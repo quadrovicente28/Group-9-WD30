@@ -1,1 +1,28 @@
-./images/home.jpg
+
+.page-cover {
+    background-image: url(../images/home.jpg);
+  }
+.page-cover h1 {
+ letter-spacing: 5px;
+ margin-left: 230px;
+}
+div.container .row {
+    justify-content: center;
+}
+.col-sm-6 {
+    background-image: url(../images/services/bg.png);
+    background-repeat: no-repeat;
+    width: 500px; 
+}
+.img {
+    width: 100%;
+    margin: 10px 2px 20px;
+    
+}
+.h1,
+p {
+    color: white;
+}
+.h1 {
+    font-size: 30px;
+}
