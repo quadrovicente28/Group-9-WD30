@@ -192,9 +192,7 @@ form textarea {
     main {
         flex-direction: column;
     }
-    .placeholder {
-        width: 0;
-    }
+
     .left-side {
         width: 100%;
     }

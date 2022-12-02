@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,500&display=swap');
 
 
 
 .page-cover {
-  background-image: url(../images/conheader.png);
+  background-image: url(../images/newsimg.png);
 }
   /*# sourceMappingURL=styles.css.map */
 
@@ -15,122 +18,66 @@ main {
     flex-wrap: wrap;
     gap: 40px;
 }
-.placeholdermagic{
-    width: 12%;
-}
+
 
 .left-side {
-    width: 48%;
-
+    width: 65%;
 }
 
-.contact-form h3 {
+.left-side div {
+    margin-bottom: 70px;
+}
+
+
+.left-side .row h5 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.left-side .row h5 span {
+    color: brown;
+}
+.left-side .row h3 {
     font-family: 'Lato', sans-serif;
-    font-size: 22px;
-    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    color: #971A1E;
+    background-color: rgb(252, 247, 247);
 }
-
-.contact-form {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.left-side .row img {
+    margin-bottom: 20px;
 }
-
-.contact-form div label {
-    margin-top: 15px;
-}
-
-
-.left-side .contact-form form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-form label {
-    display: block;
-    font-size: 14px;
-    padding: 3px;
-}
-
-form input {
-    width: 100%;
-    padding: 10px;
-}
-
-form .name {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-}
-form .name label {
-    display: block;
-}
-.name .firstName {
-    width: 50%;
-}
-.name .lastName {
-    width: 50%;
-}
-
-form textarea {
-    width: 100%;
-    font-size: 14px;
-}
-
-/* .contact-form div button {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+.left-side .row p {
+    font-family: 'Noto Sans', sans-serif;
     font-size: 15px;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #971A1E;
-    color: white;
-    margin-top: 20px;
-    border: 0;
+    font-weight: 500;
+    font-style: italic;
+    color: gray;
+    text-indent: 8%;
+}
+.left-side .row p span {
+    color: #971A1E;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bolder;
 }
 
-.contact-form div button:hover {
-    color: white;
-    background-color: #971A1E;
+.left-side .text-center {
+    margin-bottom: 0;
 }
-} */
-
 
 .right-side {
-    width: 28%;
-}
-
-.tags {
-    margin-top: 10px;
-    margin-bottom: 80px;
-}
-.tags a {
-    font-family: 'Candal', sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-    background-color: #971A1E;
-}
-
-
-.tags a:hover {
-    background-color: #5d0b0e;
+    width: 30%;
 }
 
 .color-fill {
     color: red;
 }
-.appointment a i{
-    display: none;
-}
-.appointment a:hover i{
-    display: inline;
-}
-.work a i{
-    display: none;
-}
-.work a:hover i{
-    display: inline;
-}
+
 
 .contact {
     padding-left: 15px;
@@ -194,9 +141,7 @@ form textarea {
     main {
         flex-direction: column;
     }
-    .placeholder {
-        width: 0;
-    }
+
     .left-side {
         width: 100%;
     }
@@ -223,9 +168,6 @@ form textarea {
     .contact a {
         font-size: 12px;
 
-    }
-    .tags a {
-        font-size: 12px;
     }
 }
 
