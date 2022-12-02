@@ -6,8 +6,8 @@
     display: flex;
 }
 .about {
-    background-image: url(../images/istockphoto-516230773-612x612.jpg);
-    height: 300px;
+    background-image: url(./images/istockphoto-516230773-612x612.jpg);
+    height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -17,7 +17,7 @@
   text-align:start;
   color: white;
   padding-left: 100px;
-  /* margin-top: auto; */
+ 
     margin-bottom: -30px;
   font-size: 100px;
 font-weight: 500px;
@@ -29,25 +29,67 @@ font-family: Alfa Slab One;
     font-size: 65px;
     color: grey;
     width: 800px;
-    /* padding-left: 100px; */
+    padding-right: 50px;
     font-weight: bolder;
     
 }
 .saying2 {
     color: black;
     width: 600px;
-    /* padding-left: 100px; */
-   font-family: Raleway;
+    padding-right: 200px; 
+    
+    font-family: Raleway;
 
 }
 .barbers {
     color: grey;
     width: 100%;
-    /* padding-left: 100px; */
+    padding-right: 200px;    
+    font-size: 20px;
     
 }
 
 .container {
     display: flex;
+  
+}
+.container-right {
+    padding-top: 100px;
+   
+}
+
+.thebarbers {
+    display: flex;
+    justify-content: center;
+}
+
+.imagebox {
+    display: flex;
+    flex-direction: column;
+  
+
+}
+.imagebox .qoute {
+   display: flex;
+   width: 200px
+    
+}
+.card-title {
+color: darkred;
+text-align: center;
+}
+.card-text {
+    justify-content: center;
+}
+
+.ourbarbers {
+    display: flex;
+    gap: 100px;
+    margin: 100px
+}
+
+.container-bottom {
+    display: flex;
+    
     
 }
