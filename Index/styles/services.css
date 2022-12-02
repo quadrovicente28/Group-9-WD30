@@ -13,7 +13,28 @@ div.container .row {
     background-image: url(../images/services/bg.png);
     background-repeat: no-repeat;
     width: 500px; 
+    position: relative;
 }
+.col-sm-6:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease ;
+}
+.col-sm-6::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    background-color: #971A1E;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+  .col-sm-6:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 .img {
     width: 100%;
     margin: 10px 2px 20px;
@@ -22,7 +43,12 @@ div.container .row {
 .h1,
 p {
     color: white;
+    text-align: center;
 }
 .h1 {
     font-size: 30px;
+}
+
+@media screen@(max-width ) {
+    
 }
