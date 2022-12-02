@@ -70,12 +70,13 @@
   }
 
   .reviews .img-wrapper{
-    background-color: brown;
+    background-image: url(../images/homepageimg/bot.png);
     border-radius: 50%;
     width: 100px;
     height: 100px;
     margin-right: 20px;
   }
+
 
   .reviews .card-txt {
     font-style: italic;
