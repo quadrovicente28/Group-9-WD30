@@ -15,12 +15,10 @@ main {
     flex-wrap: wrap;
     gap: 40px;
 }
-.placeholdermagic{
-    width: 12%;
-}
+
 
 .left-side {
-    width: 48%;
+    width: 65%;
 
 }
 
@@ -95,7 +93,7 @@ form textarea {
 
 
 .right-side {
-    width: 28%;
+    width: 30%;
 }
 
 .tags {
