@@ -1,0 +1,47 @@
+.page-cover {
+    background-image: url(../images/oldbarbershop.JPG);
+}
+
+.main {
+    display: flex;
+}
+
+.container {
+    /* display: flex */
+}
+
+.row1 .container1 {
+    display: inline-flex;
+    padding: 50px;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.row2 .container2 {
+    display: inline-flex;
+    padding: 50px;
+    row-gap: 40px;
+    column-gap: 40px;
+}
+
+.maintext {
+    display: flex;
+    font-family: raleway;
+    text-align: start;
+    padding-left: 100px;
+    width: 400px;
+    margin-top: 50px;
+
+}
+
+.text {
+
+    text-align: center;
+    font-family: montserrat;
+
+}
+
+.footer-container {
+    background-color: grey;
+    height: 200px;
+}

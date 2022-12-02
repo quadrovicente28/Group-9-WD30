@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Quadros Barberos</title>
+    <!-- Icon here -->
+    <link rel="icon" href="./images/icon.png" type="image/x-icon">
     <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
@@ -17,7 +19,25 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <!-- FONTS -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
     <nav class="fixed-top">
@@ -30,12 +50,12 @@
             </div>
             <div class="topbar-item">
               <i class="bi bi-envelope-fill"></i>
-              WD30-group9@kodego.com
+              quadrosbarberos@ccmail.uk
             </div>
-            <div class="topbar-item">
+            <div class="topbar-item socials">
               <a href="#"><i class="bi bi-facebook"></i></a>
             </div>
-            <div class="topbar-item">
+            <div class="topbar-item socials">
               <a href="#"><i class="bi bi-twitter"></i></a>
             </div>
           </div>
@@ -53,7 +73,6 @@
 							srcset=""
 						/>
 					</a>
-					<h1>Quadro Barberos</h1>
           <button
             class="navbar-toggler"
             type="button"
@@ -68,16 +87,16 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="./about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Services</a>
+                <a class="nav-link" href="./services.html">Services</a>
               </li>
               <li class="nav-item-brand">
-                <a href="#">
+                <a href="./index.html">
                   <img
                     src="./images/logo.png"
                     alt=""
@@ -86,13 +105,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Gallery</a>
+                <a class="nav-link" href="./gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">News</a>
+                <a class="nav-link" href=".news/html">News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Contact</a>
+                <a class="nav-link" href="./contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -100,48 +119,77 @@
       </nav>
     </nav>
 		<section class="page-cover">
-			<img src="./images/home.jpg" alt="" />
+      <h1 class="w3-animate-left">home</h1>
 		</section>
+    <div class="cont container">
+      <div class="app_row">
+        <div>
+          <a href="#">
+            <img src="./images/homepageimg/1.png" alt="">
+            <img class="top-img" src="./images/homepageimg/2.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="app_row">
+        <div>
+          <a href="#">
+            <img src="./images/homepageimg/gift1.png" alt="">
+            <img class="top-img" src="./images/homepageimg/gift2.png" alt="">
+    
+          </a>
+        </div>
+      </div>
+      <div class="app_row">
+        <div>
+          <a href="#">
+            <img src="./images/homepageimg/barbers1.png" alt="">
+            <img class="top-img" src="./images/homepageimg/barbers2.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
     <div class="container">
-      <section class="sub-nav">
-        <div>Appointments</div>
-        <div>Gift Cards</div>
-        <div>The Barbers</div>
-      </section>
-      <section class="article">
-        <div class="img-wrapper">
-          <img src="" alt="" srcset="" />
+      <section class="article row">
+        <div class="img-wrapper col">
+          <img src="./images/homepageimg/chair.png" alt="">
         </div>
-        <div class="block-qoute">
-          WE RESPECT THE HERITAGE OF CLASSIC BARBERING.
+        <div class="col mx-5">
+          <div class="block-qoute">
+            WE RESPECT THE HERITAGE OF CLASSIC BARBERING.
+          </div>
+          <p class="title">Haircuts in Boston</p>
+          <p>
+            Tweed Barbers of Boston has provided award-winning men's haircuts and
+            hot lather shaves to discerning Boston-area clients since 2006. We
+            take tremendous pride in our work and perpetuating the fine art of
+            classic barbering. Our strength and differentiation is manifest in the
+            details: how intently we listen to what you want, how well the hair is
+            tapered, how straight the neckline is, how even the sideburns are. You
+            can't find a finer men's haircut in Boston. We would love the
+            opportunity to be your Boston barber of choice.
+          </p>
+          <button>Learn More</button>
         </div>
-        <p class="title">Haircuts in Boston</p>
-        <p>
-          Tweed Barbers of Boston has provided award-winning men's haircuts and
-          hot lather shaves to discerning Boston-area clients since 2006. We
-          take tremendous pride in our work and perpetuating the fine art of
-          classic barbering. Our strength and differentiation is manifest in the
-          details: how intently we listen to what you want, how well the hair is
-          tapered, how straight the neckline is, how even the sideburns are. You
-          can't find a finer men's haircut in Boston. We would love the
-          opportunity to be your Boston barber of choice.
-        </p>
-        <button>Learn More</button>
       </section>
-      <section class="reviews">
+      <section class="reviews row">
         <div class="cards">
-          <div class="img-wrapper">
-            <img src="" alt="" srcset="" />
-          </div>
-          <div class="card-txt">
-            The vintage photos and oak flooring spell tradition - and so do the
-            master barbers with decades of experience. The superb cuts,
-            hot-lather shaves and other services - combined with the welcoming
-            vibe make this shop one of our favorites.
-          </div>
-          <div class="card-reviewer">
-            <h3>Details Magazine</h3>
-            <p>The 16 Best Barbershops in America</p>
+          <div class="row d-flex align-items-start m-3">
+            <div class="img-wrapper col-2">
+              <img src="" alt="" srcset="" />
+            </div>
+            <div class="col">
+              <div class="card-txt">
+                The vintage photos and oak flooring spell tradition - and so do the
+                master barbers with decades of experience. The superb cuts,
+                hot-lather shaves and other services - combined with the welcoming
+                vibe make this shop one of our favorites.
+                <br><br>
+              </div>
+              <div class="card-reviewer">
+                <h6>Details Magazine</h6>
+                <p>The 16 Best Barbershops in America</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -151,19 +199,22 @@
         <div class="logo">
           <img src="./images/logo.png" alt="" />
         </div>
-        <div id="address">MOA philippines</div>
-        <div class="open-hours m-5">
-          <h5>Open Hours</h5>
+        <div class="m-5">
+          G/F, Main Mall, <br>
+          Seaside Blvd, <br>
+          123, Pasay, 1300 <br>
+          Metro Manila
+        </div>
+        <div class="m-5">
           <ul>
-            <li>Mon-Thurs 10AM-9PM</li>
-            <li>Fri 10AM-7PM</li>
-            <li>Sat 8AM-6PM</li>
-            <li>Sun 9AM-5PM</li>
+            <h5>Open Hours:</h5>
+            <li>Mon-Fri 10AM-6PM</li>
+            <li>Sat-Sun 10AM-5PM</li>
           </ul>
         </div>
       </div>
       <div class="bottom-bar">
-        <div class="container">Copyright © 2022 Quadro Barberos</div>
+        <div class="container">Copyright © 2022 Quadros Barberos</div>
       </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->

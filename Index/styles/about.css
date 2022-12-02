@@ -5,24 +5,6 @@
 .main {
     display: flex;
 }
-.about {
-    background-image: url(./images/istockphoto-516230773-612x612.jpg);
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: flex-end;
-}
-.about h1 {
-  text-align:start;
-  color: white;
-  padding-left: 100px;
- 
-    margin-bottom: -30px;
-  font-size: 100px;
-font-weight: 500px;
-font-family: Alfa Slab One;
-}
 .saying {
     margin-top: 50px;
     font-family: Roboto;
@@ -93,3 +75,8 @@ text-align: center;
     
     
 }
+
+
+.page-cover {
+    background-image: url(../images/about-cover.jpg);
+  }
