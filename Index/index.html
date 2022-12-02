@@ -119,35 +119,28 @@
       </nav>
     </nav>
 		<section class="page-cover">
-      <img src="" alt="">
-      <h1 class="w3-animate-left">home</h1>
-
+      <div class="container">
+        <h1 class="w3-animate-left">home</h1>
+      </div>
 		</section>
     <div class="cont container">
       <div class="app_row">
-        <div>
-          <a href="#">
-            <img src="./images/homepageimg/1.png" alt="">
-            <img class="top-img" src="./images/homepageimg/2.png" alt="">
-          </a>
-        </div>
+        <a href="#">
+          <img src="./images/homepageimg/1.png" alt="">
+          <img class="top-img" src="./images/homepageimg/2.png" alt="">
+        </a>
       </div>
       <div class="app_row">
-        <div>
-          <a href="#">
-            <img src="./images/homepageimg/gift1.png" alt="">
-            <img class="top-img" src="./images/homepageimg/gift2.png" alt="">
-    
-          </a>
-        </div>
+        <a href="#">
+          <img src="./images/homepageimg/gift1.png" alt="">
+          <img class="top-img" src="./images/homepageimg/gift2.png" alt="">
+        </a>
       </div>
       <div class="app_row">
-        <div>
-          <a href="#">
-            <img src="./images/homepageimg/barbers1.png" alt="">
-            <img class="top-img" src="./images/homepageimg/barbers2.png" alt="">
-          </a>
-        </div>
+        <a href="#">
+          <img src="./images/homepageimg/barbers1.png" alt="">
+          <img class="top-img" src="./images/homepageimg/barbers2.png" alt="">
+        </a>
       </div>
     </div>
     <div class="container">
@@ -174,25 +167,108 @@
         </div>
       </section>
       <section class="reviews row">
-        <div class="cards">
-          <div class="row d-flex align-items-start m-3">
-            <div class="img-wrapper col-2">
-              <img src="" alt="" srcset="" />
-            </div>
-            <div class="col">
-              <div class="card-txt">
-                The vintage photos and oak flooring spell tradition - and so do the
-                master barbers with decades of experience. The superb cuts,
-                hot-lather shaves and other services - combined with the welcoming
-                vibe make this shop one of our favorites.
-                <br><br>
+        <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="cards">
+                <div class="img-wrapper">
+                  <img src="./images/homepageimg/bot.png" alt="" srcset="" />
+                </div>
+                <div class="card-txt">
+                  The vintage photos and oak flooring spell tradition - and so do the
+                  master barbers with decades of experience. The superb cuts,
+                  hot-lather shaves and other services - combined with the welcoming
+                  vibe make this shop one of our favorites.
+                  <br><br>
+                </div>
+                <div class="card-reviewer">
+                  <h6>Details Magazine</h6>
+                  <p>The 16 Best Barbershops in America</p>
+                </div>
               </div>
-              <div class="card-reviewer">
-                <h6>Details Magazine</h6>
-                <p>The 16 Best Barbershops in America</p>
+            </div>
+            <div class="carousel-item">
+              <div class="cards">
+                <div class="img-wrapper">
+                  <img src="./images/reviewers/kayle.jpg" alt="" srcset="" />
+                </div>
+                <div class="card-txt">
+                  This is my 3rd time at this barbershop.
+                  I have never been disappointed with the quality of the cuts or the service.
+                  They have the most modern equipment and the best prices.
+                  They always make you feel welcome and comfortable.
+                  <br><br>
+                </div>
+                <div class="card-reviewer">
+                  <h6>D********e</h6>
+                  <p>The VIP subscriber</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards">
+                <div class="img-wrapper">
+                  <img src="./images/reviewers/ringgo.jpg" alt="" srcset="" />
+                </div>
+                <div class="card-txt">
+                  I had a haircut two weeks ago and I couldn't be happier.
+                  The haircut was fast and the barbers were friendly and helpful.
+                  The place is nice, the clientele is pleasant and the services are excellent.
+                  <br>
+                  I highly recommend this place to every one.
+                  <br><br>
+                </div>
+                <div class="card-reviewer">
+                  <h6>R********a</h6>
+                  <p>Regular Costumer</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards">
+                <div class="img-wrapper">
+                  <img src="./images/reviewers/kenn.jpg" alt="" srcset="" />
+                </div>
+                <div class="card-txt">
+                  Noon, wala akong babae,
+                  <br>
+                  pero simula nong nagpagupit ako dito sa barbershop na ito,
+                  <br>
+                  marami nang nagpapacute
+                  <br><br>
+                </div>
+                <div class="card-reviewer">
+                  <h6>K********e</h6>
+                  <p>Regular Costumer</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards">
+                <div class="img-wrapper">
+                  <img src="./images/reviewers/joshua.jpg" alt="" srcset="" />
+                </div>
+                <div class="card-txt">
+                  Masasabi ko na "Bang for the Buck" o sulit ang pag papagupit ko sa Quadro. Very professional at accommodating ang mga staff. It feels like home dahil sobrazng cozy ang feel sa lugar. Very nostalgic. Dati walang pumapansin sakin, ngayon yung mga babae lahat gusto na ako kasabay.
+                  <br>
+                  Thank you sa mga Master Barbers ng Quadro's Barbershop.
+                  <br><br>
+                </div>
+                <div class="card-reviewer">
+                  <h6>J********a</h6>
+                  <p>Crush ng Barangay</p>
+                </div>
               </div>
             </div>
           </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
     </div>
