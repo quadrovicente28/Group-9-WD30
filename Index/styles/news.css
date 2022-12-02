@@ -5,7 +5,7 @@
 
 
 .page-cover {
-  background-image: url(../images/conheader.png);
+  background-image: url(../images/newsimg.png);
 }
   /*# sourceMappingURL=styles.css.map */
 
@@ -15,12 +15,10 @@ main {
     flex-wrap: wrap;
     gap: 40px;
 }
-.placeholdermagic{
-    width: 12%;
-}
+
 
 .left-side {
-    width: 48%;
+    width: 65%;
 
 }
 
@@ -95,25 +93,7 @@ form textarea {
 
 
 .right-side {
-    width: 28%;
-}
-
-.tags {
-    margin-top: 10px;
-    margin-bottom: 80px;
-}
-.tags a {
-    font-family: 'Candal', sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-    background-color: #971A1E;
-}
-
-
-.tags a:hover {
-    background-color: #5d0b0e;
+    width: 30%;
 }
 
 .color-fill {
@@ -223,9 +203,6 @@ form textarea {
     .contact a {
         font-size: 12px;
 
-    }
-    .tags a {
-        font-size: 12px;
     }
 }
 
