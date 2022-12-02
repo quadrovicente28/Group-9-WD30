@@ -94,6 +94,7 @@
   .reviews .card-txt {
     font-style: italic;
     font-size: 20px;
+    padding: 30px 5px 0px 5px;
     grid-column: span 10;
     grid-row: span 1;
   }
@@ -101,6 +102,8 @@
   .card-reviewer {
     grid-column: span 10;
     grid-row: span 1;
+    margin: 0px;
+    padding: 0px;
   }
 
   #reviewsCarousel{
@@ -113,8 +116,9 @@
   position: unset;
   background: unset;
   width: unset;
-  background-color: black !important;
+  background-color: rgb(114, 47, 47) !important;
 }
+
 @media (max-width: 1000px)  {
   .app_row {
     grid-column: span 3;
