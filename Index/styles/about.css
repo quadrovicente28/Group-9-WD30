@@ -5,33 +5,74 @@
 .main {
     display: flex;
 }
-
 .saying {
     margin-top: 50px;
     font-family: Roboto;
     font-size: 65px;
     color: grey;
     width: 800px;
-    /* padding-left: 100px; */
+    padding-right: 50px;
     font-weight: bolder;
     
 }
 .saying2 {
     color: black;
     width: 600px;
-    /* padding-left: 100px; */
-   font-family: Raleway;
+    padding-right: 200px; 
+    
+    font-family: Raleway;
 
 }
 .barbers {
     color: grey;
     width: 100%;
-    /* padding-left: 100px; */
+    padding-right: 200px;    
+    font-size: 20px;
     
 }
 
 .container {
     display: flex;
+  
+}
+.container-right {
+    padding-top: 100px;
+   
+}
+
+.thebarbers {
+    display: flex;
+    justify-content: center;
+}
+
+.imagebox {
+    display: flex;
+    flex-direction: column;
+  
+
+}
+.imagebox .qoute {
+   display: flex;
+   width: 200px
+    
+}
+.card-title {
+color: darkred;
+text-align: center;
+}
+.card-text {
+    justify-content: center;
+}
+
+.ourbarbers {
+    display: flex;
+    gap: 100px;
+    margin: 100px
+}
+
+.container-bottom {
+    display: flex;
+    
     
 }
 
