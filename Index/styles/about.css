@@ -1,7 +1,4 @@
 
-* {
-    box-sizing: border-box;
-}
 .main {
     display: flex;
 }
@@ -72,11 +69,9 @@ text-align: center;
 
 .container-bottom {
     display: flex;
-    
-    
 }
 
 
 .page-cover {
-    background-image: url(../images/about-cover.jpg);
+    background-image: url(../images/page-covers/about-cover.jpg);
   }

@@ -1,11 +1,8 @@
 
 .page-cover {
-    background-image: url(../images/home.jpg);
+    background-image: url(../images/page-covers/services.jpg);
   }
-.page-cover h1 {
- letter-spacing: 5px;
- margin-left: 230px;
-}
+  
 div.container .row {
     justify-content: center;
 }
