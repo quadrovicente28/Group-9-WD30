@@ -2,19 +2,23 @@
 .page-cover {
     background-image: url(../images/page-covers/services.jpg);
   }
-  
+.page-cover h1 {
+ letter-spacing: 5px;
+}
 div.container .row {
-    justify-content: center;
+    justify-content:center;
 }
 .col-sm-6 {
     background-image: url(../images/services/bg.png);
     background-repeat: no-repeat;
     width: 500px; 
     position: relative;
+    transition: 0.5s ease-in-out;
 }
 .col-sm-6:hover{
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari*/
     transform: scale(1.05);
-    transition: transform 0.5s ease ;
 }
 .col-sm-6::after {
     content: '';
@@ -34,7 +38,7 @@ div.container .row {
   }
 .img {
     width: 100%;
-    margin: 10px 2px 20px;
+    margin: 15px 2px 20px;
     
 }
 .h1,
