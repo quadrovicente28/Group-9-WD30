@@ -69,11 +69,7 @@ nav.navbar .navbar-brand img {
 nav.navbar h1 {
   color: white;
 }
-@media (min-width: 990px) {
-  nav.navbar h1 {
-    display: none;
-  }
-}
+
 nav.navbar ul.navbar-nav {
   margin: 20px auto;
 }
