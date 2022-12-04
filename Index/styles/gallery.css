@@ -1,13 +1,9 @@
 .page-cover {
-    background-image: url(../images/oldbarbershop.JPG);
+    background-image: url(../images/page-covers/gallery.jpg);
 }
 
 .main {
     display: flex;
-}
-
-.container {
-    /* display: flex */
 }
 
 .row1 .container1 {

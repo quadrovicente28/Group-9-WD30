@@ -5,7 +5,7 @@
 
 
 .page-cover {
-  background-image: url(../images/conheader.png);
+  background-image: url(../images/page-covers/contacts.jpg);
 }
   /*# sourceMappingURL=styles.css.map */
 
@@ -73,24 +73,6 @@ form textarea {
     width: 100%;
     font-size: 14px;
 }
-
-/* .contact-form div button {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-    font-size: 15px;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #971A1E;
-    color: white;
-    margin-top: 20px;
-    border: 0;
-}
-
-.contact-form div button:hover {
-    color: white;
-    background-color: #971A1E;
-}
-} */
-
 
 .right-side {
     width: 30%;
