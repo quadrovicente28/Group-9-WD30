@@ -1,40 +1,41 @@
 
-.main {
-    display: flex;
-}
 .saying {
-    margin-top: 50px;
     font-family: Roboto;
-    font-size: 65px;
+    font-size: 36px;
     color: grey;
-    width: 800px;
-    padding-right: 50px;
-    font-weight: bolder;
-    
+    font-weight: thin;
+    line-height: 1.1;
+    padding: 50px 20px 0px 0px;
 }
 .saying2 {
     color: black;
-    width: 600px;
-    padding-right: 200px; 
-    
     font-family: Raleway;
-
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
+
 .barbers {
     color: grey;
     width: 100%;
-    padding-right: 200px;    
-    font-size: 20px;
-    
+    padding-right: 20px;    
+    font-size: 17px;
 }
-
-.container {
+.aboutus-article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container-right, .container-left{
+    grid-column: span 1;
+}
+.barberseat{
     display: flex;
-  
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 0px;
 }
-.container-right {
-    padding-top: 100px;
-   
+.barberseat img{
+    width: 70%;
 }
 
 .thebarbers {
@@ -54,24 +55,71 @@
     
 }
 .card-title {
-color: darkred;
+color: #971A1E;
 text-align: center;
 }
+
 .card-text {
     justify-content: center;
 }
 
 .ourbarbers {
     display: flex;
-    gap: 100px;
-    margin: 100px
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .container-bottom {
     display: flex;
 }
 
+@media (max-width: 990px) {
+    .container-right, .container-left{
+        grid-column: span 2;
+    }
+}
+
 
 .page-cover {
     background-image: url(../images/page-covers/about-cover.jpg);
   }
+
+/* additional css for animations */
+.card {
+    position: relative;
+    grid-column: span 3;
+    width: 280px;
+    overflow: hidden;
+    margin: 50px 0px;
+}
+
+.card-overlay-pic{
+    position: absolute;
+    background-color: rgba(151, 26, 30, 0.9);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+.card-overlay-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 0px;
+    bottom: 0;
+    transition: height 0.3s ease-out;
+}
+
+.card:hover .card-overlay-info{
+    height: calc(100% - 275px);
+}
+
+.card:hover .card-overlay-pic{
+   opacity: 0.5;
+}

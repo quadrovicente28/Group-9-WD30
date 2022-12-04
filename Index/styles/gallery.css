@@ -6,10 +6,6 @@
     display: flex;
 }
 
-.container {
-    /* display: flex */
-}
-
 .row1 .container1 {
     display: inline-flex;
     padding: 50px;
