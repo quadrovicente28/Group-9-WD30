@@ -164,7 +164,6 @@ button {
   text-decoration: none;
   color: #fff;
   height: 40px;
-  border-radius: 5%;
 }
 button:hover:not(.navbar-toggler, .carousel-control-next, .carousel-control-prev)::after{
   padding-left: 10px;
