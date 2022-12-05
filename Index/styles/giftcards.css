@@ -99,6 +99,12 @@ main .div-group {
         width: 70%;
     }
 }
+@media (max-width: 768px) {
+    .page-cover h1 {
+      font-size: 32px ;
+      margin-bottom: -10px;
+    }
+}
 
 
 
