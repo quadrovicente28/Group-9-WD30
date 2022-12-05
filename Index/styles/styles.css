@@ -200,17 +200,26 @@ button:hover:not(.navbar-toggler){
   text-transform: uppercase;
   /* margin-left: 242px; */
   }
-.w3-animate-left{position:relative;
-  animation:animateleft 1s}
+.w3-animate-left{
+  
+  position:relative;
+  transition-delay: 1;
+  animation:animateleft 0.5s}
 
   @keyframes animateleft{from{left: -240px;
     opacity:0} to{left:0;opacity:1}}
 
+
+@media (max-width: 768px) {
+  .page-cover h1 {
+    font-size: 47.5px ;
+    margin-bottom: -10px;
+  }
+  
+}
 @media (max-width: 640px) {
   .page-cover h1 {
-    margin-bottom: 0px;
-    font-size: 60px;
+    font-size: 35px;
     font-weight: 400px;
-    /* text-align: center; */
     }
 }

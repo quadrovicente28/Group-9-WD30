@@ -2,11 +2,8 @@
 .page-cover {
     background-image: url(../images/page-covers/services.jpg);
   }
-.page-cover h1 {
- letter-spacing: 5px;
-}
 div.container .row {
-    justify-content:center;
+    justify-content: center;
 }
 .col-sm-6 {
     background-image: url(../images/services/bg.png);
@@ -43,7 +40,6 @@ div.container .row {
 }
 
 .img {
-    width: 100%;
     margin: 15px 2px 20px;
 }
 
