@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+.page-cover {
+    background-image: url(../images/page-covers/giftcard.jpg);
+}
+.page-cover h1 {
+    font-size: 60px;
+    margin-bottom: -20px;
+}
+main.container {
+    width: 95%;
+    margin: 80px auto;
+}
+main div span {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #181818;
+    text-transform: uppercase;
+}
+main .gift-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333333;
+}
+
+main div p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    color: gray;
+    margin: 12px 0 30px;
+}
+main div p span {
+    color: #837676;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+main div img {
+    margin-bottom: 25px;
+}
+
+main label {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: gray;
+}
+main input[type=text] {
+    width: 50px;
+    height: 100%;
+    padding: 4.5px 9px;
+}
+main button {
+    background-color: #c93948;
+    color: white;
+    border: none;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    margin: 0;
+    height: 34px;
+}
+main button:hover:not(.btn-cart)::after {
+    content: '' !important;
+    padding-left: 0 !important;
+}
+main button i {
+    padding-left: 10px;
+    display: none;
+}
+main button:hover i {
+    display: inline;
+}
+
+main .add-to-cart {
+    gap: 3px;
+}
+
+main .pricetag {
+    color: #d31f22;
+}
+main .div-group {
+    margin-bottom: 70px;
+    border-bottom: 2px #971A1E solid;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 900px) {
+    main.container {
+        width: 90%;
+    }
+    main .div-group {
+        border-bottom: none;
+    }
+}
+@media screen and (min-width: 1300px) {
+    main.container {
+        width: 70%;
+    }
+}
+
+
+
