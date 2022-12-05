@@ -193,8 +193,8 @@ button:hover:not(.navbar-toggler){
 .page-cover h1 {
   color: white;
   opacity: 9;
-  margin-bottom: -30px;
-  font-size: 100px;
+  margin-bottom: -25px;
+  font-size: 80px;
   font-weight: 400px;
   font-family: Alfa Slab One;
   text-transform: uppercase;
@@ -203,11 +203,13 @@ button:hover:not(.navbar-toggler){
 .w3-animate-left{
   
   position:relative;
-  transition-delay: 1;
-  animation:animateleft 0.5s}
+  left: 0;
+  animation:animateleft 0.5s;
+}
 
-  @keyframes animateleft{from{left: -240px;
-    opacity:0} to{left:0;opacity:1}}
+  @keyframes animateleft{from{left: -2000px;
+    opacity:0} to{left: 0;opacity:1}
+  }
 
 
 @media (max-width: 768px) {
@@ -215,11 +217,14 @@ button:hover:not(.navbar-toggler){
     font-size: 47.5px ;
     margin-bottom: -10px;
   }
-  
+  footer .container {
+    flex-direction: column;
+  }
 }
 @media (max-width: 640px) {
   .page-cover h1 {
     font-size: 35px;
     font-weight: 400px;
     }
+  
 }
