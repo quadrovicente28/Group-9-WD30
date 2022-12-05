@@ -24,6 +24,7 @@
 
   .app_row img {
     width: 100%;
+    max-width: 450px;
   }
   .top-img {
     position: absolute;
