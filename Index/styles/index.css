@@ -1,8 +1,20 @@
 
 .page-cover {
-    background-image: url(../images/page-covers/home.jpg);
+    /* background-image: unset; */
+    height: 60vh;
+    position: relative;
+    filter: none;
   }
 
+  /* Video CSS */
+#myVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
   .cont {
     margin-top: 30px;
     display: grid;
@@ -114,6 +126,7 @@
     justify-content: center;
     align-items: center;
   }
+
 /* modifying bootstrap carousel buttons */
 .carousel-control-next, .carousel-control-prev {
   position: unset;
