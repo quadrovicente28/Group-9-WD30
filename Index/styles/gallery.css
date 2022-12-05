@@ -6,26 +6,21 @@
     display: flex;
 }
 
-.row1 .container1 {
-    display: inline-flex;
-    padding: 50px;
-    row-gap: 40px;
-    column-gap: 40px;
+div h2 {
+    margin-bottom: 50px;
 }
 
-.row2 .container2 {
-    display: inline-flex;
-    padding: 50px;
-    row-gap: 40px;
-    column-gap: 40px;
+.batch-one {
+    padding-bottom: 50px;
+}
+.batch-two {
+    padding-bottom: 100px;
 }
 
 .maintext {
     display: flex;
     font-family: raleway;
     text-align: start;
-    padding-left: 100px;
-    width: 400px;
     margin-top: 50px;
 
 }
@@ -35,9 +30,4 @@
     text-align: center;
     font-family: montserrat;
 
-}
-
-.footer-container {
-    background-color: grey;
-    height: 200px;
 }
