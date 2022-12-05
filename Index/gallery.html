@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quadros Barberos</title>
+    <title>Gallery | Quadro Barberos</title>
     <!-- Icon here -->
     <link rel="icon" href="./images/icon.png" type="image/x-icon">
     <!-- Bootstrap Icons -->
@@ -118,18 +118,18 @@
       <h2>Here at Quadros', we let our customer speak their mind.</h2>
     </div>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-5 batch-one">
-      <div class="col">
+      <div class="col" data-bs-toggle="modal" data-bs-target="#lightbox" onclick="currentSlide(1)">
         <img src="./images/gallery/3c19ce791574942977b3330693b40401--world-clock-barbershop-ideas.jpg"
           class="img-thumbnail" alt="...">
       </div>
-      <div class="col">
+      <div class="col" data-bs-toggle="modal" data-bs-target="#lightbox" onclick="currentSlide(2)">
         <img src="./images/gallery/wood-3134807_640.jpg" class="img-thumbnail" alt="...">
       </div>
-      <div class="col">
+      <div class="col" data-bs-toggle="modal" data-bs-target="#lightbox" onclick="currentSlide(3)">
         <img src="./images/gallery/interior-of-flipped-hair-in-brunswick-thegem-blog-justified.jpg"
           class="img-thumbnail" alt="...">
       </div>
-      <div class="col">
+      <div class="col" data-bs-toggle="modal" data-bs-target="#lightbox" onclick="currentSlide(4)">
         <img src="./images/gallery/shavingsoap.jpg" class="img-thumbnail" alt="...">
       </div>
     </div>
@@ -140,20 +140,60 @@
         Stirtz</h2>
     </div>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-5 batch-two">
-      <div clas="col">
+      <div clas="col" data-bs-toggle="modal" data-bs-target="#lightbox" onclick="currentSlide(5)">
         <img src="./images/gallery/gillete.jpg" class="img-thumbnail" alt="...">
       </div>
-      <div clas="col">
+      <div clas="col" data-bs-toggle="modal" data-bs-target="#lightbox" onclick="currentSlide(6)">
         <img src="./images/gallery/scissors.jpg" class="img-thumbnail" alt="...">
       </div>
-      <div clas="col">
+      <div clas="col" data-bs-toggle="modal" data-bs-target="#lightbox" onclick="currentSlide(7)">
         <img src="./images/gallery/barberianph.jpg" class="img-thumbnail" alt="...">
       </div>
-      <div clas="col">
+      <div clas="col" data-bs-toggle="modal" data-bs-target="#lightbox" onclick="currentSlide(8)">
         <img src="./images/gallery/Barber_Shop__Athens__Greece_4759.jpg" class="img-thumbnail" alt="...">
       </div>
     </div>
   </main>
+  <!-- Modal -->
+  <div class="modal fade" id="lightbox" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <span type="button" class="close" data-bs-dismiss="modal" aria-label="Close">&times;</span>
+        <div class="mySlides">
+          <img src="./images/gallery/3c19ce791574942977b3330693b40401--world-clock-barbershop-ideas.jpg"
+            style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="./images/gallery/wood-3134807_640.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="./images/gallery/interior-of-flipped-hair-in-brunswick-thegem-blog-justified.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="./images/gallery/shavingsoap.jpg" style="width:100%">
+        </div>
+  
+        <div class="mySlides">
+          <img src="./images/gallery/gillete.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="./images/gallery/scissors.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="./images/gallery/barberianph.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <img src="./images/gallery/Barber_Shop__Athens__Greece_4759.jpg" style="width:100%">
+        </div>
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
   <footer>
     <div class="container">
       <div class="logo">
@@ -183,5 +223,35 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"
   ></script>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
 </body>
 </html>
