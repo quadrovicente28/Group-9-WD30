@@ -89,6 +89,11 @@ nav.navbar .navbar-brand {
   nav .topbar {
     justify-content: center;
   }
+
+  footer .container {
+    flex-direction: column;
+  }
+
 }
 
 nav.navbar ul.navbar-nav {
@@ -124,7 +129,7 @@ footer .container {
   color: #FFFFFF;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 footer .container div {
   display: flex;
