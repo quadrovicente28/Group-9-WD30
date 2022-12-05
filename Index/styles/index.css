@@ -1,11 +1,16 @@
 
 .page-cover {
-    /* background-image: unset; */
-    height: 60vh;
-    position: relative;
-    filter: none;
-  }
+  height: 60vh;
+  position: relative;
+  filter: none;
+  align-items: center;
+}
 
+.page-cover .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
   /* Video CSS */
 #myVideo {
   position: absolute;
@@ -15,6 +20,38 @@
   min-width: 100%;
   min-height: 100%;
 }
+
+.page-cover span{
+  color: #5d0b0e;
+  opacity: 9;
+  margin-bottom: -30px;
+  font-size: 70px;
+  font-weight: 400px;
+  font-family: Alfa Slab One;
+  text-transform: uppercase;
+}
+
+.w3-animate-left{
+  color: white !important;
+  position:relative;
+  animation:animateleft 2s;
+}
+
+  @keyframes animateleft{
+    from{left: -500px;opacity:0}
+    to{left:0px;opacity:1}
+  }
+
+.w3-animate-right{
+  position:relative;
+  animation:animateright 2s;
+}
+
+  @keyframes animateright{
+    from{right: -500px; opacity:0}
+    to{right: 0px; opacity:1}
+  }
+
   .cont {
     margin-top: 30px;
     display: grid;
@@ -153,4 +190,20 @@
     grid-column: span 12;
   }
 
+  .page-cover span{
+    font-size: 45px;
+    margin-bottom: -10px;
+  }
+
+  }
+
+  @media (max-width: 425px)  {
+    .page-cover span{
+      font-size: 25px;
+      margin-bottom: -10px;
+    }
+
+    .page-cover{
+      height: 300px;
+    }
   }
