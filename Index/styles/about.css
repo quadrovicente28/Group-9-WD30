@@ -41,6 +41,11 @@
 .thebarbers {
     display: flex;
     justify-content: center;
+    overflow: hidden;
+}
+
+.thebarbers img{
+    min-width: 600px;
 }
 
 .imagebox {

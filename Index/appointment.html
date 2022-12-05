@@ -113,84 +113,90 @@
         <h1 class="w3-animate-left">Booking</h1>
       </div>
     </section>
-    <main class="container">
-      <div class="card mt-5 mb-2">
+    <main class="container-sm d-flex justify-content-center">
+      <div class="card my-5">
         <div class="card-body">
-          Select barber
-        </div>
-      </div>
-      <div class="card mb-2">
-        <div class="card-body">
-          select services
-        </div>
-      </div>
-      <div class="card mt-2 mb-5">
-        <div class="card-body">
-          Fill in your Information
-          <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-4">
-              <label for="validationCustom01" class="form-label">First name</label>
-              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label for="validationCustom02" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4">
-              <label for="validationCustomUsername" class="form-label">Username</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                <div class="invalid-feedback">
-                  Please choose a username.
+          <form action="">
+            <div class="form-group">
+              <p>Select barber</p>
+              <div class="select-grp">
+                <div class="barber-select">
+                  <img src="./images/about-img/bolinao.jpg" alt="pogi">
+                  <input type="radio" class="btn-check" name="barber-name" id="barber-mac" autocomplete="off" checked>
+                  <label class="btn" for="barber-mac">Mac</label>
+                </div>
+                <div class="barber-select">
+                  <img src="./images/about-img/James.jpg" alt="pogi">
+                  <input type="radio" class="btn-check" name="barber-name" id="barber-dhenvir" autocomplete="off">
+                  <label class="btn" for="barber-dhenvir">Dhenvir</label>
+                </div>
+                <div class="barber-select">
+                  <img src="./images/about-img/kapitan.jpg" alt="pogi">
+                  <input type="radio" class="btn-check" name="barber-name" id="barber-jaime" autocomplete="off">
+                  <label class="btn" for="barber-jaime">Jaime</label>
+                </div>
+                <div class="barber-select">
+                  <img src="./images/about-img/Josh.jpg" alt="pogi">
+                  <input type="radio" class="btn-check" name="barber-name" id="barber-joshua" autocomplete="off">
+                  <label class="btn" for="barber-joshua">Joshua</label>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <label for="validationCustom03" class="form-label">City</label>
-              <input type="text" class="form-control" id="validationCustom03" required>
-              <div class="invalid-feedback">
-                Please provide a valid city.
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="validationCustom04" class="form-label">State</label>
-              <select class="form-select" id="validationCustom04" required>
-                <option selected disabled value="">Choose...</option>
-                <option>...</option>
-              </select>
-              <div class="invalid-feedback">
-                Please select a valid state.
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="validationCustom05" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="validationCustom05" required>
-              <div class="invalid-feedback">
-                Please provide a valid zip.
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                  Agree to terms and conditions
-                </label>
-                <div class="invalid-feedback">
-                  You must agree before submitting.
+            <div class="form-group">
+              <p>Select Services</p>
+              <div class="select-grp">
+                <div class="service-select">
+                  <input type="checkbox" class="btn-check" id="haircut" checked autocomplete="off">
+                  <label class="btn" for="haircut">Haircut</label><br>
+                </div>
+                <div class="service-select">
+                  <input type="checkbox" class="btn-check" id="hls" autocomplete="off">
+                  <label class="btn" for="hls">Hot Lather Shave</label><br>
+                </div>
+                <div class="service-select">
+                  <input type="checkbox" class="btn-check" id="beardtrim" autocomplete="off">
+                  <label class="btn" for="beardtrim">Beard Trim</label><br>
+                </div>
+                <div class="service-select">
+                  <input type="checkbox" class="btn-check" id="toupees" autocomplete="off">
+                  <label class="btn" for="toupees">Toupees</label><br>
+                </div>
+                <div class="service-select">
+                  <input type="checkbox" class="btn-check" id="facials" autocomplete="off">
+                  <label class="btn" for="facials">Facials</label><br>
+                </div>
+                <div class="service-select">
+                  <input type="checkbox" class="btn-check" id="coloring" autocomplete="off">
+                  <label class="btn" for="coloring">Coloring</label><br>
                 </div>
               </div>
             </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
+            <div class="form-group">
+              <p>Fill up your details</p>
+              <div class="input-grp">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+              </div>
+              <div class="input-grp">
+                <label for="contact">Mobile Number</label>
+                <input type="tel" id="contact" required>
+              </div>
+              <div class="input-grp">
+                <label for="date">Appointment Date</label>
+                <input type="date" id="date" required>
+              </div>
+              <div class="input-grp">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" required>
+              </div>
+              <div class="input-grp">
+                <label for="note">Note</label>
+                <textarea name="note" id="" cols="5"></textarea>
+              </div>
             </div>
+            <button type="submit">Get Appointment</button>
           </form>
+          
         </div>
       </div>
     </main>
