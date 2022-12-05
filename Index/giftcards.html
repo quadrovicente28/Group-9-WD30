@@ -38,6 +38,7 @@
   />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/giftcards.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
 <body>
   <nav class="fixed-top">
@@ -114,14 +115,14 @@
     </div>
   </section>
 
-  <main>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-2 g-md-5">
-        <div class="col">
+  <main class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2 g-md-5">
+        <div class="col div-group">
             <div class="text-center">
                 <img src="./images/giftcards/CutAndShave.png" alt="Cut and Shave">
             </div>
             <div class="text-center">
-                <span>
+                <span class="gift-title">
                     Haircut & Hot Lather Shave
                 </span>
             </div>
@@ -132,119 +133,128 @@
             </div>
             <div class="text-center">
                 <span>Cost: </span><span class="pricetag">P190.00</span><br>
-                <label for="costprice">Quantity:</label>
-                <input type="text" name="costprice" id="costprice" maxlength="2" value="1" class="text-center">
-                <input type="button" value="Add to cart">
+                <div class="add-to-cart d-flex justify-content-center align-items-center">
+                    <label for="costprice">Quantity:</label>
+                    <input type="text" name="costprice" id="costprice" maxlength="2" value="1" class="text-center">
+                    <button>Add to Cart<i class="bi bi-bag-plus-fill"></i></button>
+                </div> 
             </div>
         </div>
-        <div class="col">
+        <div class="col div-group">
             <div class="text-center">
-                <img src="./images/giftcards/CutAndShave.png" alt="Cut and Shave">
+                <img src="./images/giftcards/Cut.png" alt="Cut">
             </div>
             <div class="text-center">
-                <span>
-                    Haircut & Hot Lather Shave
+                <span class="gift-title">
+                    50%-off Haircut for a Friend
                 </span>
             </div>
             <div class="text-center">
                 <p>
-                    An hour-long package featuring our Best-of-Manila winning haircut and hot lather shave.
+                    For every invite of a friend to get a haircut, get a haircut for <span>ONLY</span> half the haircut price.
                 </p>
             </div>
             <div class="text-center">
-                <span>Cost: </span><span class="pricetag">P190.00</span><br>
-                <label for="costprice">Quantity:</label>
-                <input type="text" name="costprice" id="costprice" maxlength="2" value="1" class="text-center">
-                <input type="button" value="Add to cart">
+                <span>Deal: </span><span class="pricetag">50% OFF!</span><br>
+                <button>Invite a Friend</button>
             </div>
         </div>
-        <div class="col">
+        <div class="col div-group">
             <div class="text-center">
-                <img src="./images/giftcards/CutAndShave.png" alt="Cut and Shave">
+                <img src="./images/giftcards/Cut.png" alt="Cut">
             </div>
             <div class="text-center">
-                <span>
-                    Haircut & Hot Lather Shave
+                <span class="gift-title">
+                    4+1 Haircut Bundle Promo
                 </span>
             </div>
             <div class="text-center">
                 <p>
-                    An hour-long package featuring our Best-of-Manila winning haircut and hot lather shave.
+                    For every four haircut personal appointments, the fifth haircut is <span>on the house!</span> 
                 </p>
             </div>
             <div class="text-center">
-                <span>Cost: </span><span class="pricetag">P190.00</span><br>
-                <label for="costprice">Quantity:</label>
-                <input type="text" name="costprice" id="costprice" maxlength="2" value="1" class="text-center">
-                <input type="button" value="Add to cart">
+                <span>Cost: </span><span class="pricetag">P450.00</span><br>
+                <div class="add-to-cart d-flex justify-content-center align-items-center">
+                    <label for="costprice">Quantity:</label>
+                    <input type="text" name="costprice" id="costprice" maxlength="2" value="1" class="text-center">
+                    <button>Add to Cart<i class="bi bi-bag-plus-fill"></i></button>
+                </div> 
             </div>
         </div>
-        <div class="col">
+        <div class="col div-group">
             <div class="text-center">
                 <img src="./images/giftcards/CutAndShave.png" alt="Cut and Shave">
             </div>
             <div class="text-center">
-                <span>
-                    Haircut & Hot Lather Shave
+                <span class="gift-title">
+                    3 Haircut/Shave Bundle
                 </span>
             </div>
             <div class="text-center">
                 <p>
-                    An hour-long package featuring our Best-of-Manila winning haircut and hot lather shave.
+                    A set of three haircut + hot lather shave experiences.
                 </p>
             </div>
             <div class="text-center">
-                <span>Cost: </span><span class="pricetag">P190.00</span><br>
-                <label for="costprice">Quantity:</label>
-                <input type="text" name="costprice" id="costprice" maxlength="2" value="1" class="text-center">
-                <input type="button" value="Add to cart">
+                <span>Cost: </span><span class="pricetag">P540.00</span><br>
+                <div class="add-to-cart d-flex justify-content-center align-items-center">
+                    <label for="costprice">Quantity:</label>
+                    <input type="text" name="costprice" id="costprice" maxlength="2" value="1" class="text-center">
+                    <button>Add to Cart<i class="bi bi-bag-plus-fill"></i></button>
+                </div> 
             </div>
         </div>
-        <div class="col">
+        <div class="col div-group">
             <div class="text-center">
-                <img src="./images/giftcards/CutAndShave.png" alt="Cut and Shave">
+                <img src="./images/giftcards/Razor.png" alt="Razor">
             </div>
             <div class="text-center">
-                <span>
-                    Haircut & Hot Lather Shave
+                <span class="gift-title">
+                    Annual Membership
                 </span>
             </div>
             <div class="text-center">
                 <p>
-                    An hour-long package featuring our Best-of-Manila winning haircut and hot lather shave.
+                   <span>Monthly</span> haircuts for one(1) year plus <span>10%-off</span> all grooming products. 
                 </p>
             </div>
             <div class="text-center">
-                <span>Cost: </span><span class="pricetag">P190.00</span><br>
-                <label for="costprice">Quantity:</label>
-                <input type="text" name="costprice" id="costprice" maxlength="2" value="1" class="text-center">
-                <input type="button" value="Add to cart">
+                <span>Cost: </span><span class="pricetag">P1,099.00</span><br>
+                <div class="add-to-cart d-flex justify-content-center align-items-center">
+                    <label for="costprice">Quantity:</label>
+                    <input type="text" name="costprice" id="costprice" maxlength="2" value="1" class="text-center">
+                    <button>Add to Cart<i class="bi bi-bag-plus-fill"></i></button>
+                </div> 
             </div>
         </div>
-        <div class="col">
+        <div class="col div-group">
             <div class="text-center">
-                <img src="./images/giftcards/CutAndShave.png" alt="Cut and Shave">
+                <img src="./images/giftcards/Cut.png" alt="Cut">
+                <img src="./images/giftcards/Razor.png" alt="Razor">
             </div>
             <div class="text-center">
-                <span>
-                    Haircut & Hot Lather Shave
+                <span class="gift-title">
+                    A Legend's Membership
                 </span>
             </div>
             <div class="text-center">
                 <p>
-                    An hour-long package featuring our Best-of-Manila winning haircut and hot lather shave.
+                   <span>Monthly</span> haircuts for <span>three(3) years</span> plus <span>15%-off</span> all grooming products. 
                 </p>
             </div>
             <div class="text-center">
-                <span>Cost: </span><span class="pricetag">P190.00</span><br>
-                <label for="costprice">Quantity:</label>
-                <input type="text" name="costprice" id="costprice" maxlength="2" value="1" class="text-center">
-                <input type="button" value="Add to cart">
+                <span>Cost: </span><span class="pricetag">P2,999.00</span><br>
+                <div class="add-to-cart d-flex justify-content-center align-items-center">
+                    <label for="costprice">Quantity:</label>
+                    <input type="text" name="costprice" id="costprice" maxlength="2" value="1" class="text-center">
+                    <button>Add to Cart<i class="bi bi-bag-plus-fill"></i></button>
+                </div>  
             </div>
         </div>
     </div>
     <div class="text-center view-cart">
-        <button type="submit">View Cart</button>
+        <button class="btn-cart" type="submit">View Cart</button>
     </div> 
   </main>
 
