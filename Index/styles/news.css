@@ -75,7 +75,7 @@ main {
 }
 
 .color-fill {
-    color: red;
+    color: #971A1E;
 }
 
 
@@ -94,7 +94,7 @@ main {
 
 .contact p a {
     text-decoration: none;
-    color: red;
+    color: #971A1E;
 }
 
 .contact p a:hover {

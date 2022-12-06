@@ -73,6 +73,11 @@ form textarea {
     width: 100%;
     font-size: 14px;
 }
+.submit-contact button {
+    margin-top: 25px;
+    background-color: #971A1E;
+    padding: 10px 20px;
+}
 
 .right-side {
     width: 30%;
@@ -97,7 +102,7 @@ form textarea {
 }
 
 .color-fill {
-    color: red;
+    color: #971A1E;
 }
 .appointment a i{
     display: none;
@@ -127,7 +132,7 @@ form textarea {
 
 .contact p a {
     text-decoration: none;
-    color: red;
+    color: #971A1E;
 }
 
 .contact p a:hover {
