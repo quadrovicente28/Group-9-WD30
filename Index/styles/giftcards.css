@@ -14,6 +14,12 @@ main.container {
     width: 95%;
     margin: 80px auto;
 }
+main br {
+    display: none;
+}
+main .friend-off br {
+    display: inline;
+}
 main div span {
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -21,6 +27,10 @@ main div span {
     text-transform: uppercase;
 }
 main .gift-title {
+    height: 71px;
+}
+
+main .gift-title span{
     font-family: 'Lato', sans-serif;
     font-size: 26px;
     font-weight: 600;
@@ -31,13 +41,16 @@ main div p {
     font-family: 'Noto Sans', sans-serif;
     font-size: 15px;
     color: gray;
-    margin: 12px 0 30px;
+    margin: 12px auto 15px;
+    padding: 10px;
+    height: 73.5px;
 }
 main div p span {
     color: #837676;
     text-transform: uppercase;
     font-size: 17px;
 }
+
 main div img {
     margin-bottom: 25px;
 }
@@ -53,13 +66,17 @@ main input[type=text] {
     padding: 4.5px 9px;
 }
 main button {
-    background-color: #c93948;
+    background-color: #971A1E;
     color: white;
     border: none;
     padding: 2px 10px;
     text-transform: uppercase;
     margin: 0;
     height: 34px;
+}
+.view-cart .btn-cart{
+    padding: 10px 20px;
+    height: 40px;
 }
 main button:hover:not(.btn-cart)::after {
     content: '' !important;
@@ -78,7 +95,7 @@ main .add-to-cart {
 }
 
 main .pricetag {
-    color: #d31f22;
+    color: #971A1E;
 }
 main .div-group {
     margin-bottom: 70px;
@@ -86,12 +103,18 @@ main .div-group {
     padding-bottom: 20px;
 }
 
+
 @media screen and (min-width: 900px) {
     main.container {
         width: 90%;
     }
     main .div-group {
         border-bottom: none;
+    }
+}
+@media screen and (min-width:1200px) {
+    main br {
+        display: inline;
     }
 }
 @media screen and (min-width: 1300px) {
