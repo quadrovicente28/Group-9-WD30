@@ -13,34 +13,32 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
     />
     <!-- CSS only bootstrap -->
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
-    /><link
+    />
+    <!-- FONTS -->
+    <link
     href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet"
   />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
     rel="stylesheet"
   />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
     rel="stylesheet"
   />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
     rel="stylesheet"
   />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
     <nav class="fixed-top">
@@ -63,28 +61,19 @@
             </div>
           </div>
           <div class="topbar-right">
-            <button type="button">Book Appointment</button>
+            <div class="a-btn">
+              <a href="./appointment.html" target="_blank">Book Appointment&nbsp;</a>
+            </div>
           </div>
         </div>
       </div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-					<a href="#" class="navbar-brand">
-						<img
-							src="./images/logo.png"
-							alt=""
-							srcset=""
-						/>
-					</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <a href="#" class="navbar-brand">
+            <img src="./images/logo.png" alt="" srcset="" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -100,107 +89,186 @@
               </li>
               <li class="nav-item-brand">
                 <a href="./index.html">
-                  <img
-                    src="./images/logo.png"
-                    alt=""
-                    srcset=""
-                  />
+                  <img src="./images/logo.png" alt="" srcset="" />
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
+                <a class="nav-link" href="./news.html">News</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./contact.html">Contact</a>
               </li>
             </ul>
+            <div class="a-btn">
+              <a href="./appointment.html" target="_blank">Book Appointment </a>
+            </div>
           </div>
         </div>
       </nav>
     </nav>
 		<section class="page-cover">
-      <h1 class="w3-animate-left">home</h1>
+      <video autoplay muted loop id="myVideo" poster="./images/page-covers/home.jpg">
+        <source src="./images/page-covers/home-cover.mp4" type="video/mp4">
+      </video>
+      <div class="container">
+        <span class="w3-animate-left">straight shaves</span>
+        <span class="w3-animate-right">straight styles</span>
+      </div>
 		</section>
-      <div class="cont">
-        <div class="app_row">
-
-              <div>
-                <a href="#">
-                  <img src="./images/homepageimg/1.png" alt="">
-                  <img class="top-img" src="./images/homepageimg/2.png" alt="">
-
-                </a>
+    <div class="cont container">
+      <div class="app_row">
+        <a href="./appointment.html">
+          <img src="./images/homepageimg/1.png" alt="">
+          <img class="top-img" src="./images/homepageimg/2.png" alt="">
+        </a>
+      </div>
+      <div class="app_row">
+        <a href="./giftcards.html">
+          <img src="./images/homepageimg/gift1.png" alt="">
+          <img class="top-img" src="./images/homepageimg/gift2.png" alt="">
+        </a>
+      </div>
+      <div class="app_row">
+        <a href="./about.html">
+          <img src="./images/homepageimg/barbers1.png" alt="">
+          <img class="top-img" src="./images/homepageimg/barbers2.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <section class="article row">
+        <div class="img-wrapper col">
+          <img src="./images/homepageimg/chair.png" alt="">
+        </div>
+        <div class="col p-5">
+          <div class="block-qoute">
+            WE RESPECT THE HERITAGE OF CLASSIC BARBERING.
+          </div>
+          <p class="title">Haircuts in Manila</p>
+          <p>
+            Quadros Barberos of Manila has provided award-winning men's haircuts and
+            hot lather shaves to discerning Manila-area clients since 2006. We
+            take tremendous pride in our work and perpetuating the fine art of
+            classic barbering. Our strength and differentiation is manifest in the
+            details: how intently we listen to what you want, how well the hair is
+            tapered, how straight the neckline is, how even the sideburns are. You
+            can't find a finer men's haircut in Manila. We would love the
+            opportunity to be your Manila barber of choice.
+          </p>
+          <a href="./about.html">
+            <button>Learn More</button>
+          </a>
+        </div>
+      </section>
+      <section class="reviews row">
+        <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="cards">
+                <div class="img-wrapper">
+                  <img src="./images/homepageimg/bot.png" alt="" srcset="" />
+                </div>
+                <div class="card-txt">
+                  The vintage photos and oak flooring spell tradition - and so do the
+                  master barbers with decades of experience. The superb cuts,
+                  hot-lather shaves and other services - combined with the welcoming
+                  vibe make this shop one of our favorites.
+                  <br><br>
+                </div>
+                <div class="card-reviewer">
+                  <h6>Details Magazine</h6>
+                  <p>The 16 Best Barbershops in Philippines</p>
+                </div>
               </div>
-          
-        </div>
-        <div class="app_row">
-
-          <div>
-            <a href="#">
-              <img src="./images/homepageimg/gift1.png" alt="">
-              <img class="top-img" src="./images/homepageimg/gift2.png" alt="">
-
-            </a>
-          </div>
-          </div>
-          <div class="app_row">
-
-            <div>
-              <a href="#">
-                <img src="./images/homepageimg/barbers1.png" alt="">
-                <img class="top-img" src="./images/homepageimg/barbers2.png" alt="">
-
-              </a>
             </div>
+            <div class="carousel-item">
+              <div class="cards">
+                <div class="img-wrapper">
+                  <img src="./images/homepageimg/reviewers/kayle.jpg" alt="" srcset="" />
+                </div>
+                <div class="card-txt">
+                  This is my 3rd time at this barbershop.
+                  I have never been disappointed with the quality of the cuts or the service.
+                  They have the most modern equipment and the best prices.
+                  They always make you feel welcome and comfortable.
+                  <br><br>
+                </div>
+                <div class="card-reviewer">
+                  <h6>D********e</h6>
+                  <p>The VIP subscriber</p>
+                </div>
+              </div>
             </div>
-        
-    
-      
-    </div>
-        <div class="margin">
-      <section class="article">
-        <div class="img-wrapper">
-          <img src="" alt="" srcset="" />
+            <div class="carousel-item">
+              <div class="cards">
+                <div class="img-wrapper">
+                  <img src="./images/homepageimg/reviewers/ringgo.jpg" alt="" srcset="" />
+                </div>
+                <div class="card-txt">
+                  I had a haircut two weeks ago and I couldn't be happier.
+                  The haircut was fast and the barbers were friendly and helpful.
+                  The place is nice, the clientele is pleasant and the services are excellent.
+                  <br>
+                  I highly recommend this place to every one.
+                  <br><br>
+                </div>
+                <div class="card-reviewer">
+                  <h6>R********a</h6>
+                  <p>Regular Costumer</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards">
+                <div class="img-wrapper">
+                  <img src="./images/homepageimg/reviewers/kenn.jpg" alt="" srcset="" />
+                </div>
+                <div class="card-txt">
+                  Noon, wala akong babae,
+                  <br>
+                  pero simula nong nagpagupit ako dito sa barbershop na ito,
+                  <br>
+                  marami nang nagpapacute
+                  <br><br>
+                </div>
+                <div class="card-reviewer">
+                  <h6>K********e</h6>
+                  <p>Regular Costumer</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards">
+                <div class="img-wrapper">
+                  <img src="./images/homepageimg/reviewers/joshua.jpg" alt="" srcset="" />
+                </div>
+                <div class="card-txt">
+                  Masasabi ko na "Bang for the Buck" o sulit ang pag papagupit ko sa Quadro. Very professional at accommodating ang mga staff. It feels like home dahil sobrazng cozy ang feel sa lugar. Very nostalgic. Dati walang pumapansin sakin, ngayon yung mga babae lahat gusto na ako kasabay.
+                  <br>
+                  Thank you sa mga Master Barbers ng Quadro's Barbershop.
+                  <br><br>
+                </div>
+                <div class="card-reviewer">
+                  <h6>J********a</h6>
+                  <p>Crush ng Barangay</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="block-qoute">
-          WE RESPECT THE HERITAGE OF CLASSIC BARBERING.
-        </div>
-        <p class="title">Haircuts in Boston</p>
-        <p>
-          Tweed Barbers of Boston has provided award-winning men's haircuts and
-          hot lather shaves to discerning Boston-area clients since 2006. We
-          take tremendous pride in our work and perpetuating the fine art of
-          classic barbering. Our strength and differentiation is manifest in the
-          details: how intently we listen to what you want, how well the hair is
-          tapered, how straight the neckline is, how even the sideburns are. You
-          can't find a finer men's haircut in Boston. We would love the
-          opportunity to be your Boston barber of choice.
-        </p>
-        <img src="./images/homepageimg/chair.png" alt="">
-        <button>Learn More</button>
       </section>
-      <section class="reviews">
-        <div class="cards">
-          <div class="img-wrapper">
-            <img src="" alt="" srcset="" />
-          </div>
-          <div class="card-txt">
-            The vintage photos and oak flooring spell tradition - and so do the
-            master barbers with decades of experience. The superb cuts,
-            hot-lather shaves and other services - combined with the welcoming
-            vibe make this shop one of our favorites.
-          </div>
-          <div class="card-reviewer">
-            <h3>Details Magazine</h3>
-            <p>The 16 Best Barbershops in America</p>
-          </div>
-        </div>
-      </section>
     </div>
-    
     <footer>
       <div class="container">
         <div class="logo">

@@ -1,0 +1,209 @@
+
+.page-cover {
+  height: 60vh;
+  position: relative;
+  filter: none;
+  align-items: center;
+}
+
+.page-cover .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+  /* Video CSS */
+#myVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.page-cover span{
+  color: #5d0b0e;
+  opacity: 9;
+  margin-bottom: -30px;
+  font-size: 70px;
+  font-weight: 400px;
+  font-family: Alfa Slab One;
+  text-transform: uppercase;
+}
+
+.w3-animate-left{
+  color: white !important;
+  position:relative;
+  animation:animateleft 2s;
+}
+
+  @keyframes animateleft{
+    from{left: -500px;opacity:0}
+    to{left:0px;opacity:1}
+  }
+
+.w3-animate-right{
+  position:relative;
+  animation:animateright 2s;
+}
+
+  @keyframes animateright{
+    from{right: -500px; opacity:0}
+    to{right:0px; opacity:1}
+  }
+
+  .cont {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .app_row {
+    grid-column: span 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .app_row a{
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .app_row img {
+    width: 100%;
+    max-width: 450px;
+  }
+  .top-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.7s ease;
+  }
+  
+  .top-img:hover {
+    opacity: 1;
+  }
+
+  .article>.img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .article>.img-wrapper img{
+    height: 100%;
+    min-width: 100%;
+  }
+
+  .block-qoute{
+    font-family: Raleway;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 2rem 0px;
+  }
+
+  p.title {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 35px;
+  }
+
+  .article p {
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .reviews .cards{
+    background-color: rgb(235, 237, 239);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #d0d0d0;
+    margin: 40px 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .reviews .img-wrapper{
+    grid-column: span 2;
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviews .img-wrapper img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  .reviews .card-txt {
+    font-style: italic;
+    font-size: 20px;
+    padding: 30px 5px 0px 5px;
+    grid-column: span 10;
+    grid-row: span 1;
+  }
+
+  .card-reviewer {
+    grid-column: span 10;
+    grid-row: span 1;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #reviewsCarousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* modifying bootstrap carousel buttons */
+.carousel-control-next, .carousel-control-prev {
+  position: unset;
+  background: unset;
+  width: unset;
+  background-color: rgb(114, 47, 47) !important;
+}
+
+@media (max-width: 992px)  {
+  .app_row {
+    grid-column: span 3;
+  }
+
+  .reviews .img-wrapper{
+    grid-column: span 12;
+    grid-row: span 1;
+  }
+
+  .reviews .card-txt {
+    grid-column: span 12;
+  }
+
+  .card-reviewer {
+    grid-column: span 12;
+  }
+
+  .page-cover span{
+    font-size: 45px;
+    margin-bottom: -10px;
+  }
+
+  }
+
+  @media (max-width: 425px)  {
+    .page-cover span{
+      font-size: 25px;
+      margin-bottom: -10px;
+    }
+
+    .page-cover{
+      height: 300px;
+    }
+  }

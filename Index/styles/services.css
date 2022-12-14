@@ -1,0 +1,58 @@
+
+.page-cover {
+    background-image: url(../images/page-covers/services.jpg);
+  }
+div.container .row {
+    justify-content: center;
+}
+.col-sm-6 {
+    background-image: url(../images/services/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%; 
+    max-width: 500px;
+    margin: 20px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+.col-sm-6:hover{
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari*/
+    transform: scale(1.05);
+}
+.col-sm-6::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    background-color: #971A1E;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.col-sm-6:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.img {
+    margin: 15px 2px 20px;
+}
+
+.img img{
+    width: 100%;
+}
+
+.h1,
+p {
+    color: white;
+    text-align: center;
+}
+
+.h1 {
+    font-size: 30px;
+}
